@@ -1,15 +1,16 @@
 import axios from 'axios'
+import React from 'react'
 
-const INSTRUCTOR = 'in28minutes'
-const COURSE_API_URL = 'http://localhost:8080'
-const INSTRUCTOR_API_URL = `${COURSE_API_URL}/instructors/${INSTRUCTOR}`
 
-class CourseDataService {
+const TO_DO_API_URL = 'http://localhost:8080'
+const INSTRUCTOR_API_URL = `${TO_DO_API_URL}/getAllToDos`
 
-    retrieveAllCourses(name) {
-        return axios.get(`${INSTRUCTOR_API_URL}/courses`);
+class ToDoDataService extends React.Component {
+
+    render(){
+        return axios.post(`${INSTRUCTOR_API_URL}`);   
     }
 }
 
-export default new CourseDataService()
+export default ToDoDataService
 

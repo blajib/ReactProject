@@ -8,6 +8,7 @@ const Footer = () =>(
                 <NavLink to="/" className="btn btn-outline-dark bg-light"><FaListAlt/></NavLink>
                 <NavLink to="/completed" className="btn btn-outline-dark bg-light"><FaCheckSquare/></NavLink>
                 <NavLink to="/add-task" className="btn btn-outline-dark bg-light"><FaPlusSquare/></NavLink>
+                <NavLink to="/get-all" className="btn btn-outline-dark bg-light"></NavLink>
             </div>
             <a href="#" className="btn btn-outline-dark bg-light"><FaTrash/></a>
         </footer>
