@@ -4,7 +4,7 @@ import Footer from './Footer'
 import {BrowserRouter, Switch, Route} from 'react-router-dom'
 import AddTask from './AddTask'
 import initialData from '../initialData'
-import ToDoDataService from '../components/service/ToDoDataService'
+import ToDoDataService from './service/ToDoDataService'
 
 class App extends React.Component{
     render(){
@@ -12,7 +12,7 @@ class App extends React.Component{
         <section id="todo">
             <BrowserRouter>
                 <Switch>
-                    <Route path="/add-task" component={AddTask}/>
+                    <Route path="/add-task" component={AddTask}/> 
                     <Route path="/:filter?" render={(props) => <ToDoList {...props} tasks={initialData}/>}/>
                     <Route path="/get-all" component={ToDoDataService}/>
                 </Switch>
