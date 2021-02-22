@@ -4,7 +4,7 @@ import Footer from './Footer'
 import {BrowserRouter, Switch, Route} from 'react-router-dom'
 import AddTask from './AddTask'
 import initialData from '../initialData'
-import ToDoDataService from '../service/ToDoDataService'
+import ToDoDataService from '../components/service/ToDoDataService'
 
 class App extends React.Component{
     render(){
